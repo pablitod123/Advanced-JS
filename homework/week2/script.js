@@ -2,10 +2,10 @@
 $(document).ready(function() {
   loadReddit();
   $("#refresh").click(function() {
-    // Ex. 1: Refresh Refresher code here
-    // Hint: it's one line. 
-    // ...
+     location.reload();
   });
+
+
 
   $(window).mousemove(function(e) {
     // Ex. 3: My Shadow code here
@@ -22,27 +22,27 @@ $(document).ready(function() {
 
 // Ex. 2: Objectify Me code here
 // An example person
-// var rafi = {
-//   fname: ...
-//   lname: ...
-//   favoriteCereal: ...
-//   interests: ... 
-//   fullname: function() {
-//     // Make sure to use `this`
-//     // return ...
-//   },
-//   miniBio: function() {
-//     toPrint = "Hi my name is " + ...
-//     // "toPrint += X" is a shortcut for "toPrint = toPrint + X"
-//     toPrint += " and my favorite cereal is " + ...
-//     toPrint += "In my free time, I like to ";
-//     for (var i in this.interests) {
-//       toPrint += ...
-//     }
-//     console.log(toPrint);
-//     return toPrint;
-//   }
-// }
+var paul = {
+  fname: "Paul",
+  lname: "Styslinger",
+  favoriteCereal: "Quaker Oatmeal Squares",
+  interests: ["fish", "sing", "and do jigsaw puzzles"],
+  fullname: function() {
+    return this.fname + " " + this.lname;
+  },
+
+  miniBio: function() {
+    toPrint = "Hi my name is " + this.fullname();
+    // "toPrint += X" is a shortcut for "toPrint = toPrint + X"
+    toPrint += " and my favorite cereal is " + this.favoriteCereal + ". ";
+    toPrint += "In my free time, I like to " 
+    for (var i in this.interests) {
+      toPrint += this.interests[i] + " "
+    }
+    console.log(toPrint);
+    return toPrint;
+  }
+}
 
 // Gets data from Reddit
 var loadReddit = function() {
