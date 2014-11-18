@@ -1,0 +1,43 @@
+.done {
+	text-decoration: line-through;
+	color: #ccc;
+}
+
+.myList {
+	text-align: left;
+	padding:15px;
+	margin:10px;
+	color:black;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	font-family: Arial;
+
+}
+
+ul {
+	list-style:none;
+}
+
+.clearbutton {
+	text-align: right;
+	padding:15px;
+	margin:10px;
+	margin-top: 0px;
+	padding-top: 0px;
+	
+}
+
+body {
+	text-align:center;
+	padding-left:30%;
+}
+
+h1 {
+	font-size:50px;
+	font-family:Helvetica;
+	text-align: left;
+}
+
+
+
+

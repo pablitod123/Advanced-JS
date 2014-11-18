@@ -32,7 +32,7 @@ $(document).ready(function() {
       var circle = svgContainer.append("circle")
                           .attr("cx", 40)
                           .attr("cy", 40)
-                          .attr("r", (story["ups"] / 180));
+                          .attr("r", (story["ups"] / 220));
       // In the data in the Javascript object 'story',
       // Look at the JS console in Chrome to see what story looks like
       console.log(story);
